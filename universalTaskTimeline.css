@@ -1,0 +1,56 @@
+.slds-timeline__item_task:before {
+    left: 20px;
+    top: 36px;
+}
+
+.timeline-row {
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.icon-col {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.task-date,
+.task-desc {
+    font-size: 0.875rem;
+    word-break: break-word;
+    display: inline-block;
+}
+
+.timeline-row .slds-col {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slds-col {
+        width: 100% !important;
+        margin-top: 0.5rem;
+    }
+
+    .slds-align_absolute-center {
+        justify-content: flex-start !important;
+    }
+
+    lightning-button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .timeline-row .slds-col:nth-child(4) {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: flex-end;
+    }
+}
